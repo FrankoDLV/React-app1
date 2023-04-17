@@ -1,14 +1,21 @@
 import "./App.css";
-import Navbar from "../Componentes/CardWidget/ItemsListContainer/Navbar/Navbar";
-import ItemsListContainer from "../Componentes/CardWidget/ItemsListContainer/Navbar/ItemsListContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <ItemsListContainer greting={"bienvenidos"} />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/" element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-};
+}
 
 export default App;

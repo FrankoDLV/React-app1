@@ -1,0 +1,28 @@
+.btnCategorias ul {
+  font-size: 30px;
+  list-style: none;
+}
+
+.btnCategorias ul {
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 50px auto;
+}
+
+.btnCategorias ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #997b56;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 200px;
+  border: 1.3px solid #997b56;
+  height: 50px;
+  background-color: #efeee9;
+}
+.btnCategorias i {
+  font-size: 40px;
+}

@@ -1,0 +1,21 @@
+.itemcount {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  height: 60px;
+  justify-content: center;
+  
+}
+
+.itemcount div {
+  display: flex;
+  
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.itemcount button {
+  width: 35px;
+  height: 25px;
+}
